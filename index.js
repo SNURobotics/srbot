@@ -133,7 +133,7 @@ github.on('push', function(repo, ref, data) {
 
     s += ': ' + escapeMd(data.pusher.name) + ', (' + escapeMd(data.pusher.email) + ')';
     s += ' pushed ' + data.commits.length;
-    s += ' ' + (data.commits.length === 1 ? 'commit' : 'commits') + ' to ' + ref;
+    s += ' ' + (data.commits.length === 1 ? 'commit' : 'commits') + ' to ' + escapeMd(ref);
 
     if (data.commits.length === 1) {
         s += ': "' + escapeMd(data.commits[0].message) + '"';
