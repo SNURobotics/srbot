@@ -1,6 +1,15 @@
 # telegit
 GitHub web hooks for your Telegram groups
 
+## Prerequisite 
+
+1. Create a new conda environment `conda create -n telegram`
+2. Activate environment `conda activate telegram`
+3. Install required packages 
+    * `conda install -c conda-forge nodejs`
+    * `npm install githubhook ellipsize node-telegram-bot-api yargs`
+
+
 ## Setup
 1. `git clone https://github.com/FruitieX/telegit`
 2. `cd telegit`

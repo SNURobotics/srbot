@@ -23,8 +23,8 @@
   "homepage": "https://github.com/FruitieX/telegit#readme",
   "dependencies": {
     "ellipsize": "0.0.2",
-    "githubhook": "^1.5.1",
+    "githubhook": "^1.9.3",
     "node-telegram-bot-api": "^0.21.1",
-    "yargs": "^4.7.1"
+    "yargs": "^4.8.1"
   }
 }

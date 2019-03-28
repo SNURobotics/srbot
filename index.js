@@ -32,7 +32,7 @@ try {
 }
 
 var START_STR = 'Ok, I will be sending you updates from the following GitHub repo: ';
-START_STR += config.git.reponame;
+START_STR += config.git.repos;
 
 var STOP_STR = 'Ok, I will no longer be sending you GitHub updates.';
 
