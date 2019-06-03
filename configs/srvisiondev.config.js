@@ -3,17 +3,16 @@ module.exports = {
         secret: '028807149',
 
         repos: [
-            'SNURobotics-Segmentation',
-            'SRLeaderBoard'
+            'srVision',
         ],
         host: '147.46.147.87',
-        port: 3420
+        port: 3422
 
         // DEPRECATED
         //reponame: 'testrepo'
     },
 
     telegram: {
-        token: '686693577:AAGdQjhpNbpSoFMz0GRPjEjF7gJPk0NZQoM'
+        token: '867384420:AAGGb_m6aLdPUctl5fbnTyzjy5cHghkR4vY'
     }
 };
