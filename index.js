@@ -208,4 +208,17 @@ github.on('issue_comment', function(repo, ref, data) {
     sendTg(s);
 });
 
+github.on('gollum', function(repo, ref, data){
+    var s = escapeMd('[Wiki](https://github.com/SNURobotics/SNURobotics-Wiki/wiki) ');
+
+    s += escapeMd(data.sender.login) + ' updated a page: ';
+    s += '[';
+    s += escapeMd(data.pages[0].page_name);
+    s += ']';
+    s += '(';
+    s += escapeMd(data.pages[0].html_url);
+    s += ')';
+    sendTg(s);
+});
+
 github.listen();
