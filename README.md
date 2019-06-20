@@ -14,7 +14,7 @@ GitHub web hooks for your Telegram groups
 2. tmux 실행 `$ tmux new -s telegram`
 3. conda environment 활성화 `$ conda activate telegram`
 4. bot 시작 스크립트 실행 `$ cd telegram-bot` 후 `$ ./run_segmentation_bot.sh`
-5. 다른bot도 추가로 시작하고 싶을 경우 `<ctrl>+c` 로 새 스크린 생성 후 3번부터 반복.
+5. 다른bot도 추가로 시작하고 싶을 경우 `<ctrl+a>+c` 로 새 스크린 생성 후 3번부터 반복.
 
 ## Prerequisite 
 
