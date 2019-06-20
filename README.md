@@ -1,6 +1,13 @@
 # telegit
 GitHub web hooks for your Telegram groups
 
+
+## 모든 텔레그램 봇 동시에 재시작하기
+
+하나의 스크립트로 재시작을 자동화시켜두었다. `sr2`에서만 작동한다.
+
+``` $ ./run_all.sh ```
+
 ## 텔레그램봇 재시작하기
 
 1. sr2 계정으로 sr2 (sr2.snu.ac.kr) 접속

@@ -3,7 +3,8 @@ module.exports = {
         secret: '028807149',
 
         repos: [
-            'SNURobotics-Segmentation',
+            'SNURobotics-Experiments',
+            'SNURobotics-OneClassCLS',
             'SRLeaderBoard'
         ],
         host: '147.46.147.87',
