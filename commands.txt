@@ -1,2 +1,0 @@
-gitstart - Start receiving GitHub updates
-gitstop - Stop receiving GitHub updates

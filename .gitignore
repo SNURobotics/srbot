@@ -31,3 +31,6 @@ node_modules
 
 # telegit config file
 config.js
+
+venv/*
+__pycache__
