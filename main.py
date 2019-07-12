@@ -31,7 +31,8 @@ def menu():
         token = request.args.get('token')
         test = int(request.args.get('test', 0))
         dt = datetime.now()
-        if dt.hour <= 1:
+        print(dt.hour)
+        if dt.hour <= 13:
             meal = '점심'
         else:
             meal = '저녁'
