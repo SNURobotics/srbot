@@ -32,7 +32,7 @@ def parse_snu_menu():
 
 def snu_menu(meal='all'):
     """parse SNU daily menu"""
-    cafeterias = {'302동', '기숙사(901동)', '기숙사(919동)', '301동(교수)'}
+    cafeterias = {'302동', '기숙사(901동)', '기숙사(919동)', '301동(교수)', '서당골(사범대)'}
 
     if meal in {'점심', '저녁'}:
         l_keys = [meal]
