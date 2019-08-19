@@ -6,7 +6,8 @@ from collections import OrderedDict
 def parse_snu_menu():
     # 마지막 문자열은 식당 종류와 표시할 순서
     # 참고: http://mini.snu.kr/cafe/pick/
-    url = 'http://mini.snu.kr/cafe/today/kvdj'
+    # url = 'http://mini.snu.kr/cafe/today/kvdj'
+    url = 'http://mini.snu.kr/cafe/today/'
     r = requests.get(url)
     r.encoding = 'utf-8'
 
@@ -31,6 +32,8 @@ def parse_snu_menu():
 
 def snu_menu(meal='all'):
     """parse SNU daily menu"""
+    cafeterias = {'302동', '기숙사(901동)', '기숙사(919동)', '301동(교수)'}
+
     if meal in {'점심', '저녁'}:
         l_keys = [meal]
     else:
@@ -40,13 +43,14 @@ def snu_menu(meal='all'):
     msg = ''
     for meal in l_keys:
         dd_menu = d_menu[meal]
-        msg += f'*[{meal}]*\n'
+        msg += f'*[{meal}]* http://mini.snu.ac.kr \n'
         for cafe, dish in dd_menu.items():
-            s_dish = '/'.join(dish)
-            msg += f'*{cafe}* : {s_dish}\n'
+            if cafe in cafeterias:
+                s_dish = '/'.join(dish)
+                msg += f'*{cafe}* : {s_dish}\n'
     return msg
 
 
 if __name__ == '__main__':
-    snu_menu()
+    print(snu_menu())
 
